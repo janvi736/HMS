@@ -1,0 +1,1 @@
+<?php echo "Hospital Management System is working!"; ?>
