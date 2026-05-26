@@ -1,0 +1,361 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Arial, sans-serif;
+}
+
+body {
+  background-color: #f7f5ff;
+  color: #2d2d2d;
+}
+
+/* ── Navbar ── */
+nav {
+  background: #fff;
+  padding: 16px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px solid #ede9ff;
+  box-shadow: 0 2px 12px rgba(108, 71, 255, 0.06);
+}
+
+nav h1 {
+  font-size: 20px;
+  font-weight: 700;
+  color: #6c47ff;
+  letter-spacing: -0.5px;
+}
+
+nav div {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+nav span {
+  font-size: 14px;
+  color: #888;
+}
+
+nav a {
+  color: #6c47ff;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 500;
+  padding: 8px 18px;
+  border-radius: 8px;
+  border: 1.5px solid #6c47ff;
+  transition: all 0.2s;
+}
+
+nav a:hover {
+  background: #6c47ff;
+  color: #fff;
+}
+
+/* ── Container ── */
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 90vh;
+  padding: 40px 20px;
+}
+
+/* ── Form Box ── */
+.form-box {
+  background: #fff;
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 8px 32px rgba(108, 71, 255, 0.1);
+  width: 100%;
+  max-width: 440px;
+  border: 1px solid #ede9ff;
+}
+
+.form-box h2 {
+  margin-bottom: 8px;
+  color: #1a1a2e;
+  font-size: 24px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.form-box .subtitle {
+  text-align: center;
+  color: #aaa;
+  font-size: 13px;
+  margin-bottom: 28px;
+}
+
+.form-box label {
+  display: block;
+  margin-bottom: 6px;
+  font-size: 13px;
+  font-weight: 600;
+  color: #555;
+  letter-spacing: 0.3px;
+}
+
+.form-box input,
+.form-box select {
+  width: 100%;
+  padding: 11px 14px;
+  margin-bottom: 18px;
+  border: 1.5px solid #e8e4ff;
+  border-radius: 10px;
+  font-size: 14px;
+  outline: none;
+  background: #faf9ff;
+  color: #2d2d2d;
+  transition: border 0.2s;
+}
+
+.form-box input:focus,
+.form-box select:focus {
+  border-color: #6c47ff;
+  background: #fff;
+}
+
+.form-box button {
+  width: 100%;
+  padding: 13px;
+  background: #6c47ff;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s, transform 0.1s;
+  letter-spacing: 0.3px;
+}
+
+.form-box button:hover {
+  background: #5535e0;
+  transform: translateY(-1px);
+}
+
+.form-box p {
+  text-align: center;
+  margin-top: 18px;
+  font-size: 13px;
+  color: #888;
+}
+
+.form-box a {
+  color: #6c47ff;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+/* ── Messages ── */
+.error {
+  background: #fff0f0;
+  color: #c0392b;
+  padding: 11px 14px;
+  border-radius: 10px;
+  margin-bottom: 18px;
+  font-size: 13px;
+  text-align: center;
+  border: 1px solid #ffd5d5;
+}
+
+.success {
+  background: #f0fff4;
+  color: #1e8449;
+  padding: 11px 14px;
+  border-radius: 10px;
+  margin-bottom: 18px;
+  font-size: 13px;
+  text-align: center;
+  border: 1px solid #b7f5c8;
+}
+
+/* ── Dashboard Table ── */
+.dashboard-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 4px 24px rgba(108, 71, 255, 0.08);
+  border: 1px solid #ede9ff;
+}
+
+.dashboard-table th {
+  background: #6c47ff;
+  color: white;
+  padding: 14px 18px;
+  text-align: left;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.3px;
+}
+
+.dashboard-table td {
+  padding: 13px 18px;
+  border-bottom: 1px solid #f3f0ff;
+  font-size: 14px;
+  color: #444;
+}
+
+.dashboard-table tr:last-child td {
+  border-bottom: none;
+}
+
+.dashboard-table tr:hover td {
+  background-color: #faf8ff;
+}
+
+/* ── Status Badges ── */
+.status {
+  padding: 4px 12px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.3px;
+}
+
+.status.pending {
+  background: #fff8e8;
+  color: #d4890a;
+  border: 1px solid #ffe5a0;
+}
+
+.status.confirmed {
+  background: #f0fff4;
+  color: #1e8449;
+  border: 1px solid #b7f5c8;
+}
+
+.status.cancelled {
+  background: #fff0f0;
+  color: #c0392b;
+  border: 1px solid #ffd5d5;
+}
+
+/* ── Stat Cards ── */
+.stat-card {
+  padding: 24px 28px;
+  border-radius: 16px;
+  min-width: 160px;
+  flex: 1;
+  background: #fff;
+  border: 1px solid #ede9ff;
+  box-shadow: 0 4px 16px rgba(108, 71, 255, 0.07);
+}
+
+.stat-card h3 {
+  font-size: 38px;
+  font-weight: 700;
+  color: #6c47ff;
+  margin-bottom: 6px;
+}
+
+.stat-card p {
+  font-size: 13px;
+  color: #999;
+  font-weight: 500;
+}
+
+/* ── Home Page Cards ── */
+.home-container {
+  min-height: 90vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 60px 20px;
+}
+
+.home-container h1 {
+  font-size: 32px;
+  font-weight: 700;
+  color: #1a1a2e;
+  margin-bottom: 8px;
+  text-align: center;
+}
+
+.home-container p {
+  color: #aaa;
+  font-size: 15px;
+  margin-bottom: 48px;
+  text-align: center;
+}
+
+.role-cards {
+  display: flex;
+  gap: 24px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.role-card {
+  background: #fff;
+  border: 1.5px solid #ede9ff;
+  border-radius: 20px;
+  padding: 36px 32px;
+  width: 200px;
+  text-align: center;
+  text-decoration: none;
+  box-shadow: 0 4px 20px rgba(108, 71, 255, 0.08);
+  transition: all 0.2s;
+  cursor: pointer;
+}
+
+.role-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 32px rgba(108, 71, 255, 0.16);
+  border-color: #6c47ff;
+}
+
+.role-card .icon {
+  font-size: 40px;
+  margin-bottom: 16px;
+  display: block;
+}
+
+.role-card h3 {
+  font-size: 16px;
+  font-weight: 700;
+  color: #1a1a2e;
+  margin-bottom: 6px;
+}
+
+.role-card p {
+  font-size: 12px;
+  color: #bbb;
+  margin: 0;
+}
+
+/* ── Page Header ── */
+.page-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 28px;
+}
+
+.page-header h2 {
+  font-size: 22px;
+  font-weight: 700;
+  color: #1a1a2e;
+}
+
+.page-header span {
+  font-size: 13px;
+  color: #aaa;
+}
+
+/* ── Section Title ── */
+.section-title {
+  font-size: 16px;
+  font-weight: 700;
+  color: #6c47ff;
+  margin: 36px 0 16px;
+  padding-bottom: 8px;
+  border-bottom: 2px solid #ede9ff;
+}
